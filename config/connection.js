@@ -1,5 +1,23 @@
-var credentials = [];
+// mysql node package allows us to establish a connection
+var mysql = require("mysql");
 
-// connection
+var connection = mysql.createConnection({
+  host: "localhost",
+  port: 8889,
+  user: "root",
+  password: "root",
+  database: "burgers_db",
+  socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock"
+});
 
-// module.exports
+// Make connection.
+connection.connect(function(err) {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("connected as id " + connection.threadId);
+});
+
+// Export connection for our ORM to use.
+module.exports = connection;
