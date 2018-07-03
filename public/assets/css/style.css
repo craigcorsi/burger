@@ -1,3 +1,12 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -5,15 +14,21 @@ li {
 }
   
 .label {
-font-weight: bold;
+    font-weight: bold;
 }
 
 .create-update-form {
-padding: 5px;
-margin: 5px;
-background: aqua;
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
 }
 
 .form-group {
-margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+h1, h2 {
+    margin: 0 auto;
+    font-family: "Shrikhand", Times, Arial, serif;
+    color: #333335;
 }
