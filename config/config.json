@@ -1,0 +1,26 @@
+{
+    "development": {
+      "username": "root",
+      "password": "root",
+      "database": "journal_db",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
+      }
+    },
+    "test": {
+      "username": "root",
+      "password": null,
+      "database": "database_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "n7z7wcenv55eqnkc",
+      "password": "lx4sedrymwc0bwqr",
+      "database": "oo45wnpjnfw1nxsh",
+      "host": "ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    }
+  }
